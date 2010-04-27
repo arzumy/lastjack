@@ -18,7 +18,6 @@ Replace with this:
 repeat with theFile in theArgs
   --change this to your lastjack.rb location
   set shellargs to "ruby /Volumes/Work/lastjack/lastjack.rb " & theFile
-  --display dialog shellargs
   do shell script shellargs
   set aTrack to (add theFile)
 end repeat
