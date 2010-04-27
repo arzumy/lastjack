@@ -10,19 +10,19 @@ You will need:
 4) Last.fm client (optional)
 
 How?
-1) Edit lastjack.rb, put it location for Audio Hijack Pro mp3s and your Last.fm username
-2) Follow instruction in Add To iTunes Library.scpt.example
-3) Add application to hijack in Audio Hijack Pro
-4) On "Recording" tab, set When recording finishes to run your edit Add To iTunes Library.scpt as per Add To iTunes Library.scpt.example
-5) On "Recording" tab, set Silence Monitor to Start new file (Digital)
-6) Hijack your browser or Last.fm client, press record
-7) Start listening to songs as you would normally do
+1) Rename config.yml.example to config.yml, put it your Last.fm username.
+2) If you have and API key, put it in config.yml, else delete the line
+3) Follow instruction in Add To iTunes Library.scpt.example
+4) Add application to hijack in Audio Hijack Pro i.e. your browser, Last.fm client
+5) On "Recording" tab, set When recording finishes to run your edit Add To iTunes Library.scpt as per Add To iTunes Library.scpt.example
+6) On "Recording" tab, set Silence Monitor to Start new file (Digital)
+7) Hijack your browser or Last.fm client, press record
+8) Start listening to songs as you would normally do
 
 Note: Last.fm client is recommended, player in browser sometimes won't update your recent track list.
       That would result in wrong track information added to the recorded track.
 
-      If you want to update track's album too, use lastjackapi.rb. Be sure to register for API key from Last.fm
-      Rename config.yml.example to config.yml, edit accordingly, then follow the steps above
+      If you want to update track's album too, be sure to register for API key from Last.fm
 
 Cheers!
 Arzumy
