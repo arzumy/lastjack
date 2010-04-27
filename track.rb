@@ -20,9 +20,9 @@ class Track
     url       = "http://ws.audioscrobbler.com/2.0/?method=user.getrecenttracks&limit=1&user=#{CONFIG['user']}&api_key=#{CONFIG['api']}"
     xml       = Nokogiri::XML(open(url))
     if xml
-      @title  = xml.search("track > name").text
-      @artist = xml.search("track > artist").text
-      @album  = xml.search("track > album").text
+      @title  = xml.search("track > name").last.text
+      @artist = xml.search("track > artist").last.text
+      @album  = xml.search("track > album").last.text
     end
   end
 
