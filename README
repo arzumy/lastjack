@@ -1,7 +1,10 @@
 This is just a proof of concept on how to automate leeching from last.fm using Audio Hijack Pro
-By automate it means, record currently playing track, add track's title and artist, then add to iTunes library.
+By automate it means:
+  - record currently playing track
+  - add track's title and artist
+  - then add to iTunes library.
 
-Note: For educational purpose. Recording copyrighted material maybe illegal in your country.
+Note: For educational purpose only. Recording copyrighted material maybe illegal in your country.
 
 You will need:
 1) Last.fm account
@@ -12,11 +15,11 @@ You will need:
 
 How?
 1) Rename config.yml.example to config.yml, put it your Last.fm username.
-2) If you have and API key, put it in config.yml, else delete the line
+2) If you have Last.fm API key, put it in config.yml, else delete the line
 3) Follow instruction in Add To iTunes Library.scpt.example
 4) Add application to hijack in Audio Hijack Pro i.e. your browser, Last.fm client
 5) On "Recording" tab, set When recording finishes to run your edit Add To iTunes Library.scpt as per Add To iTunes Library.scpt.example
-6) On "Recording" tab, set Silence Monitor to Start new file (Digital)
+6) On "Recording" tab, set Silence Monitor to Start new file (Analog)
 7) Hijack your browser or Last.fm client, press record
 8) Start listening to songs as you would normally do
 
