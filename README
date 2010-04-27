@@ -8,6 +8,7 @@ You will need:
 2) Audio Hijack Pro http://www.rogueamoeba.com/audiohijackpro/
 3) ruby
 4) Last.fm client (optional)
+5) Last.fm API key (optional)
 
 How?
 1) Rename config.yml.example to config.yml, put it your Last.fm username.
