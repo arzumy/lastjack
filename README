@@ -21,6 +21,8 @@ How?
 Note: Last.fm client is recommended, player in browser sometimes won't update your recent track list.
       That would result in wrong track information added to the recorded track.
 
+      If you want to update track's album too, use lastjackapi.rb. Be sure to register for API key from Last.fm
+      Rename config.yml.example to config.yml, edit accordingly, then follow the steps above
 
 Cheers!
 Arzumy
