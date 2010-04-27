@@ -1,0 +1,26 @@
+This is just a proof of concept on how to automate leeching from last.fm using Audio Hijack Pro
+By automate it means, record currently playing track, add track's title and artist, then add to iTunes library.
+
+Note: For educational purpose. Recording copyrighted material maybe illegal in your country.
+
+You will need:
+1) Last.fm account
+2) Audio Hijack Pro http://www.rogueamoeba.com/audiohijackpro/
+3) ruby
+4) Last.fm client (optional)
+
+How?
+1) Edit lastjack.rb, put it location for Audio Hijack Pro mp3s and your Last.fm username
+2) Follow instruction in Add To iTunes Library.scpt.example
+3) Add application to hijack in Audio Hijack Pro
+4) On "Recording" tab, set When recording finishes to run your edit Add To iTunes Library.scpt as per Add To iTunes Library.scpt.example
+5) On "Recording" tab, set Silence Monitor to Start new file (Digital)
+6) Hijack your browser or Last.fm client, press record
+7) Start listening to songs as you would normally do
+
+Note: Last.fm client is recommended, player in browser sometimes won't update your recent track list.
+      That would result in wrong track information added to the recorded track.
+
+
+Cheers!
+Arzumy

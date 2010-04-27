@@ -1,0 +1,24 @@
+The copyright for Add To iTunes Library.scpt belongs to Rogue Amoeba Software, LLC
+So I will just show where to change, I can't give the whole thing here.
+
+If you own a copy of Audio Hijack Pro http://www.rogueamoeba.com/audiohijackpro/ you can find the file here:
+/Applications/Audio Hijack Pro.app/Contents/Resources/Recording Scripts/Add To iTunes Library.scpt
+
+Copy Add To iTunes Library.scpt to ~/Documents
+Then open with AppleScript Edit
+
+Find these lines
+
+repeat with theFile in theArgs
+	set aTrack to (add theFile)
+end repeat
+
+Replace with this:
+
+repeat with theFile in theArgs
+  --change this to your lastjack.rb location
+  set shellargs to "ruby /Volumes/Work/lastjack/lastjack.rb " & theFile
+  --display dialog shellargs
+  do shell script shellargs
+  set aTrack to (add theFile)
+end repeat
