@@ -10,14 +10,22 @@ Then open with AppleScript Edit
 Find these lines
 
 repeat with theFile in theArgs
-	set aTrack to (add theFile)
+  set aTrack to (add theFile)
 end repeat
 
 Replace with this:
 
 repeat with theFile in theArgs
-  --change this to your lastjack.rb location
-  set shellargs to "ruby /Volumes/Work/lastjack/lastjack.rb " & theFile
-  do shell script shellargs
-  set aTrack to (add theFile)
+  --I don't know how to get file size directly, so I use Finder
+  tell application "Finder"
+    set currentFile to select theFile
+    set theSize to size of currentFile
+  end tell
+  --only proceed if file larger then 1MB, to avoid buffering noise added to iTunes, you can choose your own value.
+  if theSize is greater than 1000000 then
+    --change this to your lastjack.rb location
+    set shellargs to "ruby /Volumes/Work/lastjack/lastjack.rb " & theFile
+    do shell script shellargs
+    set aTrack to (add theFile)
+  end if
 end repeat
